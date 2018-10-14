@@ -1,0 +1,162 @@
+* {
+    transition: all .3s;
+    margin: 0;
+    padding: 0;
+}
+
+h1 { 
+    text-transform: uppercase;
+    color: #7c795d; 
+    font-weight: bold;
+    font-size: 45px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0; 
+    text-align: center;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+
+body {
+    background: #000;
+    color: #7c795d; 
+    font-family: 'Trocchi', serif; 
+}
+
+.main {
+    width: 100%;
+    margin: 170px auto;
+}
+
+.content {
+    background: #81ffb6;
+    width: 50%;
+    height: 500px;
+    float: left;
+    overflow: scroll;
+}
+
+.content-2 {
+    background: #fefffd;
+    width: 50%;
+    height: 500px;
+    float: right;
+}
+
+#todoForm {
+    min-width: 200px;
+    margin: 2rem 10px;
+    border: 2px solid #7c795d;
+    padding: 2rem;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+   
+  li {
+    font-family: 'Rancho', cursive;
+    font-size: 28px;
+    margin: 10px;  
+    border-bottom: 1px solid #ccc;
+}
+   
+  li:last-child {
+    border: none;
+}
+
+input {
+    width: 100%;
+    border: 2px solid #2980B9;
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#doneBtn {
+    border: 0;
+    background: #343050;
+    padding: 0.5rem;
+    color: white;
+    margin: 1rem 10px;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#doneBtn:hover {
+    background: #3498DB;
+}
+
+label {
+    display: block;
+    padding: 1rem 0 .5rem;
+    text-transform: uppercase;
+}
+
+#addBtn {
+    border: 0;
+    background-image: linear-gradient(#44dd88, #2eb489);
+    background-color: #44dd88;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Rancho', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 14pt;
+    padding: 10px 15px;
+    height:50px; 
+    width:100px; 
+    margin: -25px -50px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 3px 2px #777;
+}
+
+#addBtn:hover {
+    background-image: linear-gradient(#61eb9f, #44dd88);
+    background: #61eb9f;
+}
+
+#removeBtn {
+    border: 0;
+    background: #343050;
+    padding: 0.5rem;
+    color: white;
+    margin: 1rem 10px;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#removeBtn:hover {
+    background: #3498DB;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+    }
+
+    .content {
+        background: #3dfff2;
+        width: 100%;
+        float: none;
+    }
+
+    .content-2 {
+        background: #328e8d;
+        width: 100%;
+        float: none;
+    }
+}
+
+.done {
+    text-decoration: line-through;
+}

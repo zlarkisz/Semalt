@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #ffffff;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    margin:0;
+    background-color:#191919;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: azure;
+  }
+
+p {
+    font-family: 'Rancho', cursive;
+    font-size: 26px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Rancho', cursive;
+}
+
+a {
+    text-decoration:none;
+    color:#FFF;
+    font-family: 'Rancho', cursive;
+  }
+  .rainbow-button {
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:3vw;
+    font-weight:bold;
+  }
+  .rainbow-button:after {
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+
+img {
+    margin: 10px;
+    padding: 10px;  
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: .45s ease-in-out;
+    transform: scale(0.9);
+    transition: .45s ease-in-out;
+    box-shadow:10px 0 20px rgba(104, 96, 96, 0.8);
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(0.7);
+}
+
+img:before, img:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+}
+img:after
+{
+	right:10px;
+    left:auto;
+    transform:skew(8deg) rotate(3deg);
+}
+
+.container div {
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+.container-item {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+}
