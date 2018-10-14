@@ -58,14 +58,14 @@ ul {
     padding: 0;
 }
    
-  li {
+li {
     font-family: 'Rancho', cursive;
     font-size: 28px;
     margin: 10px;  
     border-bottom: 1px solid #ccc;
 }
    
-  li:last-child {
+li:last-child {
     border: none;
 }
 
